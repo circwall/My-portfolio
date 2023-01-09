@@ -1,0 +1,28 @@
+:root{
+    --green:#1ecda1;
+    --green3: #08533f;
+    --green2:#358f79;
+    --yellow:  #fdba04;
+    --darkblue:#131925;
+    --gradient: linear-gradient( var(--green), #d62400);
+    --gradientYellow:radial-gradient(circle, var(--green3)15%, var(--darkblue), var(--darkblue));
+ }
+footer{
+   overflow: hidden;
+   opacity: 80%;
+}
+
+
+ .icon span{
+   display: block;
+   text-align: center;
+ }
+
+.icons a :hover{
+   transform: scale(1.1);
+}
+
+footer a:hover{
+   transform: scale(.9);
+   color: whitesmoke;
+ }

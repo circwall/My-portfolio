@@ -1,0 +1,95 @@
+:root{
+    --green:#1ecda1;
+    --green3: #08533f;
+    --green2:#358f79;
+    --yellow:  #fdba04;
+    --darkblue:#131925;
+    --gradient: linear-gradient( var(--green), #d62400);
+    --gradientYellow:radial-gradient(circle, var(--green3)15%, var(--darkblue), var(--darkblue));
+ }
+ 
+
+.btn .send{
+   border-radius: 50%;
+   padding: 6px;
+}
+
+ .form{
+    padding: 3rem 0 3rem 0;
+    background-image: linear-gradient(.6turn, var(--green2),10%, var(--darkblue)80%, var(--green));
+    border: none;
+    overflow: hidden;
+ }
+.form-control{
+    margin-top: 6px;
+}
+ .btn {
+    border: none;
+    color: var(--green);
+    background: var(--darkblue);
+    border-radius: 50px;
+ }
+
+ .btn:hover{
+    transform: scale(.9);
+    background: var(--darkblue);
+    color: white;
+ }
+
+
+ /*Projects*/
+
+ .carde{
+   border-radius: 20px;
+   padding: 0;
+ }
+
+#projects{
+   padding-top: 3em;
+}
+
+
+ #projectgee a{
+   text-decoration: none;
+ }
+ #projectgee a:hover{
+   transform: scale(.9);
+   color:var(--green2);
+ }
+
+
+ .eachpr{
+   margin-bottom: 2em;
+   box-shadow: 0 1.2px 7px 0 rgb(160, 52, 127);
+ }
+ 
+ .eachpr :hover{
+   cursor: pointer;
+ }
+
+ #projects article{
+   text-align: justify;
+   opacity: 80%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ #projects  .codeSources{
+  display: flex;
+  justify-content: space-between;
+  opacity: 70%;
+ }
+
+ #projects .codeSources a{
+  font-size: .8em;
+  color: whitesmoke;
+ }
+
+ #projects .arrows{
+  width: 100%;
+ }
+
+ #projects .arrows :hover{
+  transition: 250ms ease-in-out;
+  transform: scale(.8);
+  cursor: pointer;
+ }
