@@ -46,7 +46,9 @@
 
 #projects{
    padding-top: 3em;
+   
 }
+
 
 
  #projectgee a{
@@ -94,6 +96,19 @@
   cursor: pointer;
  }
 
- @media only screen and(max-width:702px) {
-  
+ .btn-default{
+color: var(--green);
  }
+
+ .btn-default :hover{
+  cursor: pointer;
+  color: whitesmoke;
+  transform: scale(.8);
+ }
+ #projects #projectgee .eachpr{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+

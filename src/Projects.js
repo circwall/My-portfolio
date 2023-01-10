@@ -18,11 +18,11 @@ function Projects({projects,setProjects,displayProjects}) {
     <section  className='pb-5 sectionge' id='projects'>
         <div className='text-center pb-3'>
             <h1>PROJECTS</h1>
-            <div className='btn'>
-                <p onClick={displayProjects} className={projects===false? 'collapsed': ''}>TAP TO VIEW PROJECTS</p>
-                <p onClick={displayProjects} className={projects===true? 'collapsed': ''}>TAP TO HIDE PROJECTS</p>
-                <Icon.ArrowDownCircleFill onClick={displayProjects} className={projects===false? 'collapsed': 'arrows'}/>
-                <Icon.ArrowUpCircleFill onClick={displayProjects} className={projects===true? 'collapsed': 'arrows'}/>
+            <div className='btn-default'>
+                <p onClick={displayProjects} className={projects===false? 'collapsed': 'taps'}>TAP TO VIEW PROJECTS</p>
+                <p onClick={displayProjects} className={projects===true? 'collapsed': 'taps'}>TAP TO HIDE PROJECTS</p>
+                <Icon.ArrowDownCircleFill onClick={displayProjects} className={projects===false? 'collapsed': 'arrows taps'}/>
+                <Icon.ArrowUpCircleFill onClick={displayProjects} className={projects===true? 'collapsed': 'arrows taps'}/>
             </div>
         </div>
         <div  variant='dark' className={projects===true? 'collapsed': 'container carde  prodiv'} id='projectgee' >

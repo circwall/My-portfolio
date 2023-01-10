@@ -43,9 +43,11 @@
  }
  #herosect{
   overflow: hidden;
+  padding-top: 5em;
  }
 
  .mydp{
+  margin-right: 80px;
   width: 300px;
   border-radius: 80%;
   box-shadow: 0px 0px 9px 1px var(--green);
@@ -107,9 +109,7 @@ header a :hover{
   opacity: 60%;
 }
 
-.imageside{
-  padding-right: 2em;
-}
+
 
 .headerlink{
   display: flex;
@@ -131,6 +131,7 @@ header a :hover{
 
 
 .menubtn, .exitmenu{
+
   margin-right: 1.5em;
 }
 @media only screen and (min-width:702px) {
@@ -139,7 +140,9 @@ header a :hover{
   }
   header{
     display: none;
+    height: 0;
   }
+  
 }
 @media only screen and (max-width:768px){
   header img{

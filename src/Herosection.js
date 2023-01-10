@@ -8,7 +8,7 @@ import About from './About';
 
 const Firstside = () =>{
     return(
-        <section className=' pt-5 main-section' id='herosect'>
+        <section className='  main-section' id='herosect'>
             <div className='mainge '>
                 <div className=' pt-5'>
                     <div className=' gee'>
@@ -27,9 +27,6 @@ const Firstside = () =>{
                                 <caption className='spinner-grow'></caption>
                             </div>*/}
                         </div>
-                    </div>
-                    <div className='connect container '>
-                        
                     </div>
                 </div>
             </div>

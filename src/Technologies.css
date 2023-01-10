@@ -34,6 +34,7 @@
     padding-bottom: 16px;
     opacity: 80%;
   }
+
   
   .techbig h3{
     font-weight: 800;
@@ -52,6 +53,9 @@
     cursor: pointer;
   }
 
+  .techbig{
+    z-index: inherit;
+  }
 
   #projectgee{
     width: 85%;
@@ -70,19 +74,37 @@
   .showMore:hover{
     transform: scale(.99);
   }
-  .collapsed{
-    transition: 1000ms ease-out;
-    display: none;
-  }
+  
 
   .pages{
     text-align: left;
     margin: 2.5em;
     opacity: 80%;
   }
+  .collapsed{
+    
+    transition: 1000ms ease-out;
+    display: none;
+  }
+  @media only screen and (min-width: 768px){
+    .techbig{
+      width: 30%;
+      /*right: 20em;*/
 
+    }
+
+    
+    #technologies{
+      text-align: left;
+    }
+    
+  }
   @media only screen and (max-width:768px){
     .techbig{
       width: 80%;
+    }
+    .collapsedMenu{
+      transition: 1000ms ease-out;
+      display: none;
     }
   }
