@@ -26,7 +26,7 @@ function Projects({projects,setProjects,displayProjects}) {
             </div>
         </div>
         <div  variant='dark' className={projects===true? 'collapsed': 'container carde  prodiv'} id='projectgee' >
-            <div className=' bg-dark  eachpr'>
+            <div className=' bg-dark  eachpr '>
                 <img
                 className="d-block w-100 h-100 image"
                 src={teamapp}

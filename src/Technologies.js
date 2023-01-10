@@ -49,12 +49,12 @@ const Technologies = () => {
         }
     ]
     return(
-        <section>
+        <section id='technologies'>
             <div className="container techDescriptionn ">
                 <h1 className="text-center">TECHNOLOGIES</h1>
                 <p className="pages"> Some of the Technologies I've worked with in the feild of web development, especialy Front-end and hosting. Here are some Technologies i have worked with</p>
             </div>
-            <div id='technologies' className="container techbig card bg-dark">
+            <div className="container techbig card bg-dark">
                 <div className="frontend pt-3">
                     <img id='image'src={reactImage}/>
                     <div className="mx-2">

@@ -15,16 +15,15 @@ const Contact = () => {
   const[yourName, setname] = useState('');
   const[email, setEmail] = useState('');
   const[subject, setSubject] = useState('');
-  const [valid,setValid]= useState(false)
+  const emailRegex =
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
 
   function handleSubmit(form){
-    email.test(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i)? setValid(true) :setValid(false);
+    
     form.preventDefault();
     const message = {yourName,email,subject,text};
-    alert('Name:'+yourName +', Email:'+email +', Subject:' +subject+', Message:'+text)
-    
-    
-   {/*} send(
+    send(
       'service_perso5r',
       'template_kb3dhbq',
       {yourName,email,subject,text},
@@ -39,8 +38,7 @@ const Contact = () => {
         console.log('FAILED...', err);
       });
     console.log(message)
-    setEmail(''); setSubject(''); setText(''); setname('');*/}
-   
+    setEmail(''); setSubject(''); setText(''); setname('');
 
   }
   return (
@@ -53,7 +51,6 @@ const Contact = () => {
       <button  className='btn p-2 mt-2 text-center' type='submit'>Send Message<span className='send'><Icon.SendFill/></span><span className={sent===true? 'text-light ' : 'collapsed'}>submited <Icon.ArrowRightShort/></span></button>
       
     </form>
-    
   )
 }
 

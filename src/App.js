@@ -18,7 +18,7 @@ function App() {
     menu===false? setMenu(true) : setMenu(false)
 }
 
-const [projects, setProjects]= useState(false)
+const [projects, setProjects]= useState(true)
 const displayprojects= () =>{
   projects===false ? setProjects(true) : setProjects(false)
 }
@@ -29,7 +29,7 @@ const displayprojects= () =>{
       <Firstside/>
       {/*<Skills/>*/}
       <Projects projects={projects} setProjects={setProjects} displayProjects={displayprojects}/>
-      <Technologies/>
+      <Technologies />
       <About/>
       <Contact/>
       <Footer/>
